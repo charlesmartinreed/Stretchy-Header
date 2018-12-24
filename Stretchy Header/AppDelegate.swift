@@ -13,9 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow()
+        
+        //note that we need to set SOME kind of collectionViewLayout, but not necessarily FlowLayout. That's unique to this particular project.
+        window?.rootViewController = StretchyHeaderController(collectionViewLayout: UICollectionViewFlowLayout())
+        
         return true
     }
 

@@ -12,6 +12,8 @@
 		8C41F6A021D07D8B00745FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C41F69E21D07D8B00745FE7 /* Main.storyboard */; };
 		8C41F6A221D07D8C00745FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C41F6A121D07D8C00745FE7 /* Assets.xcassets */; };
 		8C41F6A521D07D8C00745FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C41F6A321D07D8C00745FE7 /* LaunchScreen.storyboard */; };
+		8C41F6AD21D07E4F00745FE7 /* StretchyHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C41F6AC21D07E4F00745FE7 /* StretchyHeaderController.swift */; };
+		8C41F6AF21D083D800745FE7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C41F6AE21D083D800745FE7 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8C41F6A121D07D8C00745FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C41F6A421D07D8C00745FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C41F6A621D07D8C00745FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C41F6AC21D07E4F00745FE7 /* StretchyHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderController.swift; sourceTree = "<group>"; };
+		8C41F6AE21D083D800745FE7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				8C41F6A121D07D8C00745FE7 /* Assets.xcassets */,
 				8C41F6A321D07D8C00745FE7 /* LaunchScreen.storyboard */,
 				8C41F6A621D07D8C00745FE7 /* Info.plist */,
+				8C41F6AE21D083D800745FE7 /* HeaderView.swift */,
+				8C41F6AC21D07E4F00745FE7 /* StretchyHeaderController.swift */,
 			);
 			path = "Stretchy Header";
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C41F6AD21D07E4F00745FE7 /* StretchyHeaderController.swift in Sources */,
 				8C41F69D21D07D8B00745FE7 /* ViewController.swift in Sources */,
 				8C41F69B21D07D8B00745FE7 /* AppDelegate.swift in Sources */,
+				8C41F6AF21D083D800745FE7 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
