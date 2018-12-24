@@ -21,9 +21,14 @@ class StretchyHeaderController: UICollectionViewController, UICollectionViewDele
         setupCollectionView()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent //a kludge, doesn't work well with scrolling behavior
+    }
+    
     //MARK:- Setup methods
     fileprivate func setupCollectionView() {
         collectionView.backgroundColor = .white //default is black
+        collectionView.contentInsetAdjustmentBehavior = .never //turn off the safe area adjustments
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         
         //register your header - using a UICollectionReusableView
