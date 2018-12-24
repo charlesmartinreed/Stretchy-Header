@@ -12,17 +12,34 @@ class StretchyHeaderController: UICollectionViewController, UICollectionViewDele
     
     fileprivate let cellId = "cellId"
     fileprivate let headerId = "headerId"
-
+    fileprivate let padding: CGFloat = 12
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //custom code for collection view
         
+        setupCollectionViewLayout()
+        setupCollectionView()
+    }
+    
+    //MARK:- Setup methods
+    fileprivate func setupCollectionView() {
         collectionView.backgroundColor = .white //default is black
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         
         //register your header - using a UICollectionReusableView
         //self gets the class that represents the HeaderView
         collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+    }
+    
+    fileprivate func setupCollectionViewLayout() {
+        //custom code for collection view
+        
+        //collectionView layout customization
+        if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
+            
+            //layout is really powerful, it can control line spacing, cell size, header size, etc
+            layout.sectionInset = .init(top: padding, left: padding, bottom: padding, right: padding)
+        }
     }
     
     //MARK:- Methods for rendering header
@@ -51,6 +68,6 @@ class StretchyHeaderController: UICollectionViewController, UICollectionViewDele
     //MARK:- UICollectionViewDelegateFlowLayout protocol methods
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return .init(width: view.frame.width, height: 50)
+        return .init(width: view.frame.width - 2 * padding, height: 50)
     }
 }
