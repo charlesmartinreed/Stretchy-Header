@@ -8,26 +8,26 @@
 
 import UIKit
 
-extension UIView {
-    func fillSuperview(padding: UIEdgeInsets = .zero) {
-        translatesAutoresizingMaskIntoConstraints = false
-        
-        if let superViewTopAnchor = superview?.topAnchor {
-            topAnchor.constraint(equalTo: superViewTopAnchor, constant: padding.top).isActive = true
-        }
-        
-        if let superViewTrailingAnchor = superview?.trailingAnchor {
-            trailingAnchor.constraint(equalTo: superViewTrailingAnchor, constant: padding.right).isActive = true
-        }
-        
-        if let superViewBottomAnchor = superview?.bottomAnchor {
-            bottomAnchor.constraint(equalTo: superViewBottomAnchor, constant: padding.bottom).isActive = true
-        }
-        
-        if let superViewTrailingAnchor = superview?.trailingAnchor {
-            trailingAnchor.constraint(equalTo: superViewTrailingAnchor, constant: padding.left).isActive = true
-        }
-        
-        
-    }
-}
+//extension UIView {
+//    func fillSuperview(padding: UIEdgeInsets = .zero) {
+//        translatesAutoresizingMaskIntoConstraints = false
+//
+//        if let superViewTopAnchor = superview?.topAnchor {
+//            topAnchor.constraint(equalTo: superViewTopAnchor, constant: padding.top).isActive = true
+//        }
+//
+//        if let superViewTrailingAnchor = superview?.trailingAnchor {
+//            trailingAnchor.constraint(equalTo: superViewTrailingAnchor, constant: padding.right).isActive = true
+//        }
+//
+//        if let superViewBottomAnchor = superview?.bottomAnchor {
+//            bottomAnchor.constraint(equalTo: superViewBottomAnchor, constant: padding.bottom).isActive = true
+//        }
+//
+//        if let superViewTrailingAnchor = superview?.trailingAnchor {
+//            trailingAnchor.constraint(equalTo: superViewTrailingAnchor, constant: padding.left).isActive = true
+//        }
+//
+//
+//    }
+//}

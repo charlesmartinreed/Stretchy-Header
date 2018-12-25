@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         
         //note that we need to set SOME kind of collectionViewLayout, but not necessarily FlowLayout. That's unique to this particular project.
-        window?.rootViewController = StretchyHeaderController(collectionViewLayout: UICollectionViewFlowLayout())
+        window?.rootViewController = StretchyHeaderController(collectionViewLayout: StretchyHeaderLayout())
         
         return true
     }
