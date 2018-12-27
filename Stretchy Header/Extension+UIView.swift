@@ -8,26 +8,24 @@
 
 import UIKit
 
-//extension UIView {
-//    func fillSuperview(padding: UIEdgeInsets = .zero) {
-//        translatesAutoresizingMaskIntoConstraints = false
-//
-//        if let superViewTopAnchor = superview?.topAnchor {
-//            topAnchor.constraint(equalTo: superViewTopAnchor, constant: padding.top).isActive = true
-//        }
-//
-//        if let superViewTrailingAnchor = superview?.trailingAnchor {
-//            trailingAnchor.constraint(equalTo: superViewTrailingAnchor, constant: padding.right).isActive = true
-//        }
-//
-//        if let superViewBottomAnchor = superview?.bottomAnchor {
-//            bottomAnchor.constraint(equalTo: superViewBottomAnchor, constant: padding.bottom).isActive = true
-//        }
-//
-//        if let superViewTrailingAnchor = superview?.trailingAnchor {
-//            trailingAnchor.constraint(equalTo: superViewTrailingAnchor, constant: padding.left).isActive = true
-//        }
-//
-//
-//    }
-//}
+extension UIView {
+    func fillSuperview() {
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        if let superviewTop = superview?.topAnchor {
+            topAnchor.constraint(equalTo: superviewTop).isActive = true
+        }
+        
+        if let superviewTrailing = superview?.trailingAnchor {
+            trailingAnchor.constraint(equalTo: superviewTrailing).isActive = true
+        }
+        
+        if let superviewBottom = superview?.bottomAnchor {
+            bottomAnchor.constraint(equalTo: superviewBottom).isActive = true
+        }
+        
+        if let superviewLeading = superview?.leadingAnchor {
+            leadingAnchor.constraint(equalTo: superviewLeading).isActive = true
+        }
+    }
+}

@@ -24,7 +24,7 @@ class StretchyHeaderLayout: UICollectionViewFlowLayout {
                 
                 //to create the scaling effect, we'll alter the contentOffset for the collection view element
                 let contentOffsetY = collectionView.contentOffset.y
-                print(contentOffsetY)
+                //print(contentOffsetY)
                 
                 //FIX: prevent the header view from collapsing in the collection view when scrolling back up
                 if contentOffsetY > 0 {
